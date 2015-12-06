@@ -1,0 +1,18 @@
+<h1>Foto Wajah</h1>
+<p>Find me in app/views/foto_wajah/index.html.erb</p>
+
+<button class="sembunyi">Sembunyikan</button>
+<button class="tampil">Tampilkan</button>
+<p><img id="foto" src="/images/dyoo.jpg"></p>
+
+<script>
+	$(document).ready(function(){
+		$(".sembunyi").click(function(){
+			$("#foto").hide("slow");
+		});
+
+		$(".tampil").click(function(){
+			$("#foto").show("slow");
+		});
+	});
+</script>

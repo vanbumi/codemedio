@@ -1,0 +1,59 @@
+<h1>Events</h1>
+
+<p>Sebelumnya kita belajar Selectors, Events adalah memutuskan kapan operasi dilakukan</p>
+
+<table class="table">
+	<tr>
+		<th>No</th>
+		<th>Nama</th>
+		<th>Kota</th>		
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Ersya</td>
+		<td>Jakarta</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Brandon</td>
+		<td>Sydney</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Adot</td>
+		<td>Bandung</td>
+	</tr>
+</table>
+
+<script>
+	$(document).ready(function(){
+		$("th").addClass("orange");
+		$("tr:odd").addClass("hijaumuda");
+		$("tr:even").addClass("hijautua");
+
+		$("tr").mouseover(function(){
+			$(this).addClass("merahmuda");
+		});
+		$("tr").mouseout(function(){
+			$(this).removeClass("merahmuda");
+		})
+		$("tr").click(function(){
+			$(this).toggleClass("birumuda");
+		})
+	});
+</script>
+
+<style>
+	.hijaumuda {
+		background-color: #6f6;
+	}
+	.hijautua {
+		background-color: #0c3;
+	}
+	.merahmuda {
+		background-color: #f06;
+	}
+	.birumuda {
+		background-color: #09f;
+	}
+</style>

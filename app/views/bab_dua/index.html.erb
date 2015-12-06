@@ -1,0 +1,106 @@
+<div class="container">
+	<div class="col-sm-10">	
+
+		<h1>Bab Dua</h1>
+
+		<h2>Selectors</h2>
+
+		<div>
+			<ul>
+				<li>Nasi Goreng</li>
+				<li>Sop Buntut</li>
+				<li>Mie Ayam</li>
+			</ul>
+		</div>
+
+		<script>
+			$(document).ready(function(){
+				$("div").addClass("biru");
+			});
+		</script>
+
+		<style>
+			.biru{
+				color: blue;
+				font-weight: bold;
+			}
+		</style>
+
+		<!-- batas -->
+
+		<h2>Paragraph</h2>
+
+		<p>Menu Favorite</p>
+		<div>
+			<ul>
+				<li>Nasi Goreng</li>
+				<li>Sop Buntut</li>
+				<li>Mie Ayam</li>
+			</ul>
+		</div>
+
+		<script>
+			$(document).ready(function(){
+				$("div").addClass("biru");
+
+				$("p").addClass("birukuning");
+			});
+		</script>
+
+		<style>
+			.biru{
+				color: blue;
+				font-weight: bold;
+			}
+			.birukuning{
+				color: blue;
+				font-weight: bold;
+				background-color: yellow;
+			}
+			.hitamputih {
+				color: white;
+				background-color: black;
+			}
+		</style>
+
+		<!-- batas -->
+
+		<h2>Selectors Id (#)</h2>
+
+		<p>Menu Favorite</p>
+		<div>
+			<ul id="target">
+				<li>Nasi Goreng</li>
+				<li>Sop Buntut</li>
+				<li>Mie Ayam</li>
+			</ul>
+		</div>
+
+		<script>
+			$(document).ready(function(){
+				$("#target").addClass("birukuning");
+			});
+		</script>
+
+		<!-- batas -->
+
+		<h2>Selectors class (.)</h2>
+
+		<p>Menu Favorite</p>
+		<div>
+			<ul id="target">
+				<li>Nasi Goreng</li>
+				<li class="subtarget">Sop Buntut</li>
+				<li>Mie Ayam</li>
+			</ul>
+		</div>
+
+		<script>
+			$(document).ready(function(){
+				$("#target").addClass("birukuning");
+				$(".subtarget").addClass("hitamputih");
+			});
+		</script>
+
+	</div>
+</div>
