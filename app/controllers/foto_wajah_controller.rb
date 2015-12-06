@@ -1,4 +1,4 @@
-class FotoWajahController < ApplicationController
+class FotoWajahController < ApplicationController	
   def index
   end
 end

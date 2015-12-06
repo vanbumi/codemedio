@@ -1,18 +1,45 @@
-<h1>Foto Wajah</h1>
-<p>Find me in app/views/foto_wajah/index.html.erb</p>
+<%= render 'shared/topnav' %>
 
-<button class="sembunyi">Sembunyikan</button>
-<button class="tampil">Tampilkan</button>
-<p><img id="foto" src="/images/dyoo.jpg"></p>
+<div class="container">	
+	<div class="row">
 
-<script>
-	$(document).ready(function(){
-		$(".sembunyi").click(function(){
-			$("#foto").hide("slow");
-		});
+		<!-- sidebar -->
+		<%= render 'shared/sidebar' %>
 
-		$(".tampil").click(function(){
-			$("#foto").show("slow");
-		});
-	});
-</script>
+		<div class="col-md-10">
+			<h1>Show dan Hide Gambar</h1>
+			<p>Menampilkan dan menyembunyikan gambar</p>
+			<br>
+
+			<!-- tampilkan -->
+
+			<!-- <pre class="language-html">
+			    &lt;span&gt;
+			        I'm a span element. I hope I've been escaped properly... as otherwise I will be :-( and the browser will be :-O
+			    &lt;/span&gt;
+			</pre> -->
+			
+			<pre class="language-html">
+			    &lt;button class="sembunyi"&gt;Sembunyikan&lt;/button&gt;
+			</pre>
+			
+			<br>
+			<button class="sembunyi">Sembunyikan</button>
+			<button class="tampil">Tampilkan</button><br>
+			<br>
+			<p><img id="foto" src="http://res.cloudinary.com/medio/image/upload/c_scale,w_400/v1448733558/daily_rlv3rs.jpg"></p>
+
+			<script>
+				$(document).ready(function(){
+					$(".sembunyi").click(function(){
+						$("#foto").hide("slow");
+					});
+
+					$(".tampil").click(function(){
+						$("#foto").show("slow");
+					});
+				});
+			</script>
+		</div>
+	</div>	
+</div>

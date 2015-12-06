@@ -1,0 +1,24 @@
+
+#topnav {
+	/*background-color: #0e83e0;*/
+}
+
+.navbar-brand {
+	color: #fff;
+}
+
+footer {
+	background-color: #888;
+	color: #fff;
+	min-height: 100px;
+	padding: 10px;
+}
+
+.jumbotron {
+	/*margin-top: 20px;*/
+}
+
+#sidebar {
+	border:1px #ccc solid;
+	min-height: 700px;
+}
