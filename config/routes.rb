@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get ':slug' => 'single_post#index'
+
+  get 'tutorial' => 'single_post#index' 
+
+  resources :posts, path: 'admin/posts'
+  
   get 'admin/dashboard' => 'admin#index'
 
   get 'landing/index'

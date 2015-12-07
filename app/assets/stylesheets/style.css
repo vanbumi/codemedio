@@ -22,3 +22,28 @@ footer {
 	border:1px #ccc solid;
 	min-height: 700px;
 }
+
+#singlepost {
+	/*background-color: #f1f1f3;*/
+}
+
+
+
+/*---------------landing page-----------------*/
+
+article {
+	padding-bottom: 10px;
+	/*background-color: #ccc;*/
+	/*border-bottom: 1px #ccc solid;*/
+}
+
+#rightside {
+	min-height: 600px;
+	/*background-color: #ccc;*/
+}
+
+#rs {
+	padding: 10px 0 40px 0;
+	/*background-color: #ccc;*/
+	border-bottom: 1px #eee solid;
+}

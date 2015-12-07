@@ -7,27 +7,21 @@
 		<%= render 'shared/sidebar' %>
 
 		<div class="col-md-10">
-			<h1>Show dan Hide Gambar</h1>
-			<p>Menampilkan dan menyembunyikan gambar</p>
+			<% @posts.each do |post| %>
+			<h1><%= post.name %></h1>
+			<p><%= raw post.content %></p>
 			<br>
-
-			<!-- tampilkan -->
-
-			<!-- <pre class="language-html">
-			    &lt;span&gt;
-			        I'm a span element. I hope I've been escaped properly... as otherwise I will be :-( and the browser will be :-O
-			    &lt;/span&gt;
-			</pre> -->
 			
-			<pre class="language-html">
+			<!-- tampilkan -->
+			<!-- <pre class="language-html">
 			    &lt;button class="sembunyi"&gt;Sembunyikan&lt;/button&gt;
-			</pre>
+			</pre> -->
 			
 			<br>
 			<button class="sembunyi">Sembunyikan</button>
 			<button class="tampil">Tampilkan</button><br>
 			<br>
-			<p><img id="foto" src="http://res.cloudinary.com/medio/image/upload/c_scale,w_400/v1448733558/daily_rlv3rs.jpg"></p>
+			<p><img id="foto" src="<%= post.image_url %>"></p>
 
 			<script>
 				$(document).ready(function(){
@@ -41,5 +35,6 @@
 				});
 			</script>
 		</div>
+	<% end %>
 	</div>	
 </div>
