@@ -18,9 +18,11 @@ footer {
 	/*margin-top: 20px;*/
 }
 
+/*single-post*/
 #sidebar {
-	border:1px #ccc solid;
+	/*border-right:1px #ccc solid;*/
 	min-height: 700px;
+	background-color: #e3e6e8;
 }
 
 #singlepost {
@@ -46,4 +48,24 @@ article {
 	padding: 10px 0 40px 0;
 	/*background-color: #ccc;*/
 	border-bottom: 1px #eee solid;
+}
+
+
+/*---------------- single post -----------------*/
+
+#rightside-singlepost {
+	background-color: #eee;
+	min-height: 400px;
+	border: 1px #ccc solid;
+}
+
+/*container*/
+#singlepost {
+	background-color: #fff;
+	margin-top: -20px;
+}
+
+/*body*/
+#singlep-bg {
+	background-color: #f3f3f3;	
 }

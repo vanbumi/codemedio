@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :categories, path: 'admin/categories'
+
+  get 'general-tutorial' => 'general_tutorial#index'
+
+  devise_for :users
+  
   get ':slug' => 'single_post#index'
 
   get 'tutorial' => 'single_post#index' 

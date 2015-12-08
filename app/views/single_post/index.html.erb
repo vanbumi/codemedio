@@ -1,17 +1,19 @@
 <%= render 'shared/topnav' %>
 
-<div class="container">	
+<div id="singlepost" class="container">	
 	<div class="row">
 
 		<!-- sidebar -->
 		<%= render 'shared/sidebar' %>
 
-		<div class="col-md-10">
-			<% @postsL.each do |postL| %>
+		<div class="col-md-9">
+		<% @postsL.each do |postL| %>
 			<h1><%= postL.name %></h1>
-			<p><%= raw postL.content %></p>
-			<br>
+				
+				<p><%= raw postL.content %></p>
+				<br>
+				
 		</div>
-	<% end %>
+		<% end %>
 	</div>	
 </div>

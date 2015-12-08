@@ -2,14 +2,16 @@
   <p id="notice"><%= notice %></p>
 
   <h1>Listing Posts</h1>
-
+  <br>
+  <%= link_to ' New', new_post_path, class:"fa fa-plus-circle fa-lg" %>
   <table class="table table-hover table-striped">
     <thead>
       <tr>
         <th>ID</th>
         <th>Name</th>
+        <th>Category</th>
         <th>Slug</th>
-        <th>Content</th>
+        <!-- <th>Content</th> -->
         <th>Image Url</th>
         <th colspan="3"></th>
       </tr>
@@ -20,8 +22,9 @@
         <tr>
           <td><%= post.id %></td>
           <td><%= post.name %></td>
+          <td><%= post.category.cat_name if post.category %></td>
           <td><%= post.slug %></td>
-          <td><%= post.content %></td>
+          <!-- <td><%= post.content %></td> -->
           <td><%= post.image_url %></td>
           <td><%= link_to 'Show', post %></td>
           <td><%= link_to 'Edit', edit_post_path(post) %></td>
@@ -33,5 +36,4 @@
 
   <br>
 
-  <%= link_to 'New Post', new_post_path %>
 </div>

@@ -1,5 +1,9 @@
 class SinglePostController < ApplicationController
 
+	layout 'singlep_layout'
+
+	before_action :authenticate_user!
+
   def index
   	
 	slug = params[:slug]

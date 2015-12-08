@@ -1,0 +1,81 @@
+<!-- top nav -->
+<%= render 'shared/topnav' %>	
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>General Tutorial</h1>
+    <h2>Ruby, Ruby on Rails, JavaScript, Web CMS, Node.js, Angular dsb</h2>
+    <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+  </div>
+</div>
+
+<div class="container">
+	<!-- Example row of columns -->
+	<div class="row">
+	  <div id="post-left" class="col-md-4">
+				  
+		 <% @postsGTL.each do |postGTL| %>
+			<article>
+			    <h2><%= postGTL.name %></h2>
+			    <p><%= strip_tags(postGTL.content)[0..200] %></p>
+			    <p><a class="btn btn-default" href="/<%= postGTL.slug %>" role="button">Readmore &raquo;</a></p>
+			</article>
+		  <% end %>		  
+	  </div>
+
+	  <div id="post-middle" class="col-md-4">
+
+	  	<% @postsGTM.each do |postGTM| %>
+			<article>
+				<h2><%= postGTM.name %></h2>
+			    <p><%= strip_tags(postGTM.content)[0..200] %></p>
+			    <p><a class="btn btn-default" href="/<%= postGTM.slug %>" role="button">Readmore &raquo;</a></p>		
+			</article>
+	    <% end %>
+	 </div>
+
+	<!-- rightside -->	
+	  <div id="rightside" class="col-md-4 text-center">
+		<div id="rs" class="row">
+		    <img src="/images/dyoo2.jpg" alt="dyo" class="img-circle" width="150" height="150">
+		</div>
+		<div id="rs" class="row">  
+		  	<img src="http://res.cloudinary.com/medio/image/upload/c_scale,h_150,w_150/v1449503247/logojquery_ucpjtt.gif" alt="dyo" class="img-circle" width="150" height="150">
+		</div>
+		<div id="rs" class="row">  
+		  	<img src="http://res.cloudinary.com/medio/image/upload/c_scale,h_150,w_150/v1449503706/logo_ror_hw8i7f.png" alt="dyo" class="img-circle" width="150" height="150">
+	  	</div>
+	  </div>
+	</div>
+
+	<!-- <div class="row">
+	  <div class="col-md-4">
+	    <h2>Heading 1</h2>
+	    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	  </div>
+	  <div class="col-md-4">
+	    <h2>Heading</h2>
+	    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	 	</div>
+	 	<div class="col-md-4">
+	    <h2>Heading right</h2>
+	    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	 	</div>
+	</div> -->
+
+	<hr>
+
+	<!-- <footer>
+	  <p>&copy; Company 2014</p>
+	</footer> -->
+</div> <!-- /container -->
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; CodeMedio 2015</p>
+  </div>
+</footer>
