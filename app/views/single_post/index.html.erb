@@ -7,10 +7,13 @@
 		<%= render 'shared/sidebar' %>
 
 		<div class="col-md-9">
-		<% @postsL.each do |postL| %>
-			<h1><%= postL.name %></h1>
-				<img src="http://dummyimage.com/600x400/cccccc/ffffff.png&text=image" alt="">	
-				<p><%= raw postL.content %></p>
+		<% @postSing.each do |postS| %>
+			<h1><%= postS.name %></h1>	
+				<!-- <img src="http://dummyimage.com/600x400/cccccc/ffffff.png&text=image" alt=""> -->
+				<img src="<%= postS.image_url %>" alt="">	
+				<div id="content">		
+					<%= raw postS.content %>
+				</div>
 				<br>
 				
 		</div>
