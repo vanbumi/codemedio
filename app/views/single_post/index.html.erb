@@ -9,7 +9,7 @@
 		<div class="col-md-9">
 		<% @postsL.each do |postL| %>
 			<h1><%= postL.name %></h1>
-				
+				<img src="http://dummyimage.com/600x400/cccccc/ffffff.png&text=image" alt="">	
 				<p><%= raw postL.content %></p>
 				<br>
 				
@@ -17,3 +17,5 @@
 		<% end %>
 	</div>	
 </div>
+
+<%= render 'shared/footer' %>

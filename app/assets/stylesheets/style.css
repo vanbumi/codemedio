@@ -33,6 +33,10 @@ footer {
 
 /*---------------landing page-----------------*/
 
+#wraper-landing {
+	margin-top: 60px;
+}
+
 article {
 	padding-bottom: 10px;
 	/*background-color: #ccc;*/
@@ -62,10 +66,18 @@ article {
 /*container*/
 #singlepost {
 	background-color: #fff;
-	margin-top: -20px;
+	margin-top: 60px;
+	box-shadow: 1px 1px 10px #ccc;
 }
 
 /*body*/
 #singlep-bg {
 	background-color: #f3f3f3;	
+}
+
+
+/*------------ General Tutorial page --------------*/
+
+#wraper-gentut {
+	margin-top: 60px;
 }

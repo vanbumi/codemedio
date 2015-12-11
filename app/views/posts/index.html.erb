@@ -1,4 +1,4 @@
-<div class="container">  
+  
   <p id="notice"><%= notice %></p>
 
   <h1>Listing Posts</h1>
@@ -33,7 +33,6 @@
       <% end %>
     </tbody>
   </table>
-
   <br>
 
-</div>
+<%= will_paginate @posts, :style => 'color:blue' %>

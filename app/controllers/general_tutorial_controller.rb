@@ -1,6 +1,6 @@
 class GeneralTutorialController < ApplicationController
   def index
-  	@postsGTL = Post.limit(3)
-  	@postsGTM = Post.limit(3).offset(3)
+  	@postsGTL = Post.where("category_id != '7'").limit(3)
+  	@postsGTM = Post.where("category_id != '7'").limit(3).offset(3)
   end
 end
